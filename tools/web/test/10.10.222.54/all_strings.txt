@@ -1,0 +1,176 @@
+JFIF
+ , #&')*)
+-0-(0%()(
+((((((((((((((((((((((((((((((((((((((((((((((((((
+27Rrs
+#6Bbt
+3CST
+#$5Sc
+*L3(
+~{}=j
+,{}}5
+@@5~
+T@pO
+g7t{T
+'U}v
+qE#e
+2RJK
+)tGh
+f9D%
+>%]`
+dm;>
+GyN>
+(Fki-
+{2'{
+ ";G
+[Si#8
+Z&7kwh
+G_rfs
+ <7{]5
+=JN&C
+iX}f
+.duT
+_OM%5,
+Y<$id
+oi"\,
+9u8>
+-{	k
+pS[H
+r_D>|
+cqx5
+>H#q
+M7ph
+ah}N
+]#i"
+-1T:
+|K="
+Z{bK
+j==]i
+O[OS
+*qqf
+>F5C&
+\Yty
+yd51;
+lv :
+\OP]g5
+;F.rQ
+f}K+
+F\z~
+a31'
+9?@tu
+P|QL
+px +
+q`vYI
+oc+%,
+Wz&'kwj
+Zkfc
+k4,.
+mq7m]y
+'>1Y,
+B?yH
+ |34:7
+7	)G
+ ;i`
+8`i|
+pkZ:
+Jq{4S
+`gG.
+uF%@'
+[Ocm
+s$cd
+Dbul
+._%m/OT
+qM>^
+y.A=
+_Vfu]W}
+ne}p
+@|sC
+gkNo}
+ohqR
+mQ	&
+66uu
+,|TE
+u8:X
+fW^%
+eRN'L{
+v)cq0
+d:re9
+TmJz95
+ue'{
+9Zlw
+cMBo
++5]9dA
+VEr~
+d^nL
+=L1OY
+=kyL
+O?Ik
+TIj{eq
+3Sv	
+CLr#
+|I_A
+K%{Y_a
+MS>C
+~n~f
+x*N<Z
+:}CX
+Wm-[
+jy	uM
+?3{)`
+( hlQ01
+,f:6
+x69o
+]U]0
++M{w
+VY3u
+EN|,
+hszW
+,MwTnw
+\O#3
+WV<z3M
+Y4uCk^
+b7Lr
+M5#OvEKl
+@YmC%
+I%`9
+`32="
+Z.gcoe.
+_OQ$34
+*|v?am
+'G+C
+YEM8
+VC+I
+S{M'
+F+"[V
+ZC:B
+rd9+
+,U)qn]P
++ t= n
+>	)x
+$oDi
+;kVG
+X3{--
+pS[2
+<html>
+	<head>
+		<title>Connected Successfully!</title>
+		<style>
+			body {
+				margin: auto;
+				text-align: center;
+				font-family: Arial, Helvetica, sans-serif;
+				margin-top: 50px;			
+			}
+			code {
+				font-weight: 700;
+				font-size: 16px;
+				color: #f48222;
+			}
+		</style>
+	</head>
+	<body>
+		<img src="openvpn.jpg">
+		<h2>You're connected to the network!</h2></br>
+		<code>flag{connection_verified}</code>
+	</body>
+</html>
