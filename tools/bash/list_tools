@@ -1,0 +1,37 @@
+#!/bin/bash
+
+# Directory where the script resides
+# 1. ${BASH_SOURCE[0]} gets the path of the current script.
+# 2. dirname extracts its directory.
+# 3. cd changes to that directory.
+# 4. pwd prints the full directory path. 
+    # -- only executes if preceding command returns exit status 0
+# 5. $(...) captures this output, which is stored in SCRIPT_DIR.
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+# Initialize counter
+count=0
+
+# Header
+echo "List of Bash Scripts:"
+echo "---------------------"
+
+# This snippet lists all .sh (Bash script) files in the directory stored in SCRIPT_DIR.
+# 1. "$SCRIPT_DIR" ensures that the directory path is treated as a single string, even if it contains spaces.
+# 2. /*.sh expands to match all files in that directory with a .sh extension.
+# for script in "$SCRIPT_DIR"/*.sh; do
+for script in "$SCRIPT_DIR"; do
+  # Increment counter
+  ((count++))
+
+  # Extract filename from the full path
+  script_name=$(basename "$script")
+
+  # Print formatted output
+  printf "%3d: %s\n" "$count" "$script_name"
+done
+
+# If no Bash scripts found
+if [ "$count" -eq 0 ]; then
+  echo "No Bash scripts found."
+fi
