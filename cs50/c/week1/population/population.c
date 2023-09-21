@@ -1,25 +1,46 @@
 #include <cs50.h>
 #include <stdio.h>
 
-// Function prototype for get_int
-int get_int(char message[]);
+// Print message and read input, then return
+int get_int_me(char message[], int flag, int* start_population_pointer)
+{
+    int input = 0;
+    int foo = *start_population_pointer;
+    printf("%s", message);
+    scanf("%d", &input);
+
+    if(input < 9 && flag == 0)
+    {
+        printf("Please input a population greater than 9\n");
+        get_int_me("Enter the start size: ", 0, start_population_pointer);
+    }
+
+    if(input <= foo && flag == 1)
+    {
+        printf("Please input an end population greater than the inital population value of %d\n", *start_population_pointer);
+        get_int_me("Enter the end size: ", 1, start_population_pointer);
+    }
+
+    return input;
+}
 
 int main()
 {
     // Initialize variables
     int start_population, end_population, years = 0;
+    int* start_population_pointer = &start_population;
 
     // Prompt user for start size
     // Do while loop
     do
     {
-        start_population = get_int("Enter the start size: ");
+        start_population = get_int_me("Enter the start size: ", 0, start_population_pointer);
     } while (start_population < 9);
 
     // Prompt user for end size
     do
     {
-        end_population = get_int("Enter the end size: ");
+        end_population = get_int_me("Enter the end size: ", 1, start_population_pointer);
     } while (end_population <= start_population);
 
     // Calculate the number of years
@@ -38,20 +59,6 @@ int main()
     return 0;
 }
 
-// Print message and read input, then return
-int get_int(char message[])
-{
-    int input = 0;
-    printf("%s", message);
-    scanf("%d", &input);
-
-    if(input < 9)
-    {
-        printf("Please input a population greater than 9");
-    }
-
-    return input;
-}
 
 // ### Required Functionality
 
