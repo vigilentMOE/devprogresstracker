@@ -65,7 +65,7 @@ int getCardTypeInitial(int* intArray, int length)
         return AMEX; 
     }
 
-    if(intArray[0] == 5 && (intArray[1] == 1 || intArray[1] == 2 || intArray[1] == 3 || intArray[1] == 4) && length == 16)
+    if(intArray[0] == 5 && (intArray[1] == 1 || intArray[1] == 2 || intArray[1] == 3 || intArray[1] == 4|| intArray[1] == 5) && length == 16)
     {
         printf("Could be a MASTERCARD...\n");
         return MASTERCARD; 
@@ -140,7 +140,7 @@ int checkCard(long long int cardNumber)
 
     // Testing
     numberOfDigits = getNumberOfDigits(cardNumber);
-    printf("Number of digits: %d\n", numberOfDigits);
+    // printf("Number of digits: %d\n", numberOfDigits);
     
     int length = 0;
     char *str = intToString(cardNumber, &length);
