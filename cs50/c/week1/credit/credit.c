@@ -198,19 +198,25 @@ int checkCard(long long int cardNumber)
 int main(void)
 {
 
-    // For testing
-    long long int amexExample = 341234567890123LL;  // 15
-    long long int masterCardExample = 5105105105105100; // 16
-    long long int visaExampleLong = 4111111111111111;  // 16
-    long long int visaExampleShort = 4111111111111;      // 13
-    long long int invalidExample = 123456789012345;   // 15
-    long long int test = 32985238;
+    // For submission 
+    printf("Please enter a valid credit card number: ");
+    long long int userInput = 0;
+    scanf("%lld", &userInput);
+    checkCard(userInput);
 
-    checkCard(test);
-    checkCard(amexExample);
-    checkCard(masterCardExample);
-    checkCard(visaExampleLong);
-    checkCard(visaExampleShort);
+    // For testing
+    // long long int amexExample = 341234567890123LL;  // 15
+    // long long int masterCardExample = 5105105105105100; // 16
+    // long long int visaExampleLong = 4111111111111111;  // 16
+    // long long int visaExampleShort = 4111111111111;      // 13
+    // long long int invalidExample = 123456789012345;   // 15
+    // long long int test = 32985238;
+
+    // checkCard(test);
+    // checkCard(amexExample);
+    // checkCard(masterCardExample);
+    // checkCard(visaExampleLong);
+    // checkCard(visaExampleShort);
 
     return 0;
 }
